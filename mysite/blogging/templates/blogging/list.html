@@ -4,7 +4,7 @@
 {% for post in posts %}
     <div class="blog">
         <h2>
-            <a href="{% url 'blog_index' blog.pk %}">{{ blog.title }}</a>
+            <a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a>
         </h2>
     </div>
 {% endfor %}

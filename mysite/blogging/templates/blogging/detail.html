@@ -1,19 +1,11 @@
-{# blogging/templates/detail.html #}
-
 {% extends "base.html" %}
 {% block content %}
-<h1>{{ blog.title }}</h1>
+<h1>{{ post.title }}</h1>
 <div class="blog-body">
-    {{ blog.text }}
-</div>
-<div class="poll-score">
-    Current score: {{ poll.score }}
-</div>
-<div class="poll-vote">
-    <form method="POST">
-        {% csrf_token %}
-        <input type="submit" name="vote" value="Yes">
-        <input type="submit" name="vote" value="No">
-    </form>
+    <ul>
+     <li>{{ post.text }}</li>
+     <li>{{ post.author }}</li>
+     <li>{{ post.created_date }}</li>
+    </ul>
 </div>
 {% endblock %}
