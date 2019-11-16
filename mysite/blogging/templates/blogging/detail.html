@@ -1,11 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>{{ post.title }}</h1>
-<div class="blog-body">
-    <ul>
-     <li>{{ post.text }}</li>
-     <li>{{ post.author }}</li>
-     <li>{{ post.created_date }}</li>
-    </ul>
+<a class="backlink" href="/blogging">Home</a>
+<h1>{{ post }}</h1>
+<p class="byline">
+  Posted by {{ post.author.username }} &mdash; {{ post.published_date }}
+</p>
+<div class="post-body">
+  {{ post.text }}
+  {{ post.Category }}
 </div>
+<ul class="categories">
+  {% for category in post.categories.all %}
+    <li>{{ category }}</li>
+  {% endfor %}
+</ul>
 {% endblock %}
