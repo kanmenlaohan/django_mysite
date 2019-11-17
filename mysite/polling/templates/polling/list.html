@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="topnav">
+  <a class="active" href="/polling">Polls</a>
+  <a class="active" href="/blogging">Blog</a>
+</div>
 <h1>Polls</h1>
 {% for poll in polls %}
     <div class="poll">

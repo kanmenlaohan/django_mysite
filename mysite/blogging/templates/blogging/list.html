@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="topnav">
+  <a class="active" href="/">Polls</a>
+  <a class="active" href="/blogging">Blog</a>
+</div>
   <h1>Recent Posts</h1>
   {% comment %} here is where the query happens {% endcomment %}
   {% for post in posts %}
