@@ -17,7 +17,7 @@ class Post(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=64, null=False)
     description = models.TextField(blank=True)
-    posts = models.ManyToManyField(Post, blank=True, related_name='Category')
+    posts = models.ForeignKey(Post, on_delete=models.CASCADE, blank=True, null=True, related_name='Category')
 
     def __str__(self):
         return self.name
