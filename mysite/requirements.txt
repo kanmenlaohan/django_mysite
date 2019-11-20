@@ -79,7 +79,7 @@ passlib==1.7.1
 peewee==3.2.2
 pexpect==4.7.0
 pickleshare==0.7.5
-Pillow==5.1.0
+Pillow==6.2.0
 plainbox==0.25
 pluggy==0.11.0
 prometheus-client==0.6.0
