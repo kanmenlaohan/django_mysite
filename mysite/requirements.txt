@@ -67,7 +67,7 @@ more-itertools==7.0.0
 nbconvert==5.4.1
 nbformat==4.4.0
 netifaces==0.10.4
-notebook==5.7.8
+notebook==6.1.5
 oauth==1.0.1
 oauthlib==2.0.6
 olefile==0.45.1
